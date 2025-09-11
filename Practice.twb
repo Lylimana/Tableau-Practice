@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='procurement_of_goods_and_services_over_5000_april_to_june_2018' inline='true' name='federated.12680oi1cmt2re12k6zia099gsjo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='procurement_of_goods_and_services_over_5000_april_to_june_2018' name='textscan.1xro03h1r9io1w1f1bh2j02716x8'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/manal/Desktop/Tableau/procurement_of_goods_and_services_over_5000_april_to_june_2018.csv' dataRefreshTime='' directory='C:/Users/manal/Desktop/Tableau' filename='C:/Users/manal/AppData/Local/Temp/TableauTemp/06pjm2q0pf3zj8157ilpg0t0xtpr/procurement_of_goods_and_services_over_5000_april_to_june_2018.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1xro03h1r9io1w1f1bh2j02716x8' name='procurement_of_goods_and_services_over_5000_april_to_june_2018.csv' table='[procurement_of_goods_and_#csv$]' type='table'>
+          <columns character-set='windows-1252' gridOrigin='A1:F408:no:A1:F408:1' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Reference Number' ordinal='0' />
+            <column datatype='string' name='Supplier Name' ordinal='1' />
+            <column datatype='real' name='Value' ordinal='2' />
+            <column datatype='date' name='Purchase Order Date' ordinal='3' />
+            <column datatype='string' name='Description of Goods or Services' ordinal='4' />
+            <column datatype='string' name='Local Authority Department' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F408:no:A1:F408:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>814</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reference Number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reference Number]</local-name>
+            <parent-name>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv]</parent-name>
+            <remote-alias>Reference Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Supplier Name]</local-name>
+            <parent-name>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv]</parent-name>
+            <remote-alias>Supplier Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Purchase Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Purchase Order Date]</local-name>
+            <parent-name>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv]</parent-name>
+            <remote-alias>Purchase Order Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description of Goods or Services</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description of Goods or Services]</local-name>
+            <parent-name>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv]</parent-name>
+            <remote-alias>Description of Goods or Services</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Local Authority Department</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Local Authority Department]</local-name>
+            <parent-name>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv]</parent-name>
+            <remote-alias>Local Authority Department</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Purchase Order Date (Month / Day / Year)]' role='dimension' type='ordinal' user:agg-type='MDY' user:base-field='Purchase Order Date' user:ui-builder='date-bin-builder'>
+        <calculation class='tableau' formula='(DATEPART(&apos;year&apos;, [Purchase Order Date])*10000 + DATEPART(&apos;month&apos;, [Purchase Order Date])*100 + DATEPART(&apos;day&apos;, [Purchase Order Date]))' />
+      </column>
+      <column caption='procurement_of_goods_and_services_over_5000_april_to_june_2018.csv' datatype='table' name='[__tableau_internal_object_id__].[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/manal/AppData/Local/Temp/TableauTemp/#TableauTemp_12t96981pk6h1s1bgj0bm1p0x07o.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/11/2025 08:45:49 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Reference Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reference Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reference Number</remote-alias>
+              <ordinal>0</ordinal>
+              <family>procurement_of_goods_and_services_over_5000_april_to_june_2018.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>325</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supplier Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supplier Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supplier Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>procurement_of_goods_and_services_over_5000_april_to_june_2018.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>252</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>2</ordinal>
+              <family>procurement_of_goods_and_services_over_5000_april_to_june_2018.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>340</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Purchase Order Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Purchase Order Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Purchase Order Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>procurement_of_goods_and_services_over_5000_april_to_june_2018.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description of Goods or Services</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description of Goods or Services]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description of Goods or Services</remote-alias>
+              <ordinal>4</ordinal>
+              <family>procurement_of_goods_and_services_over_5000_april_to_june_2018.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>390</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Local Authority Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Local Authority Department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Local Authority Department</remote-alias>
+              <ordinal>5</ordinal>
+              <family>procurement_of_goods_and_services_over_5000_april_to_june_2018.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='procurement_of_goods_and_services_over_5000_april_to_june_2018.csv' id='procurement_of_goods_and_services_over_5000_april_to_june_2018.csv_E99D4EFFB32A498B92FE97CAE1CBE371'>
+            <properties context=''>
+              <relation connection='textscan.1xro03h1r9io1w1f1bh2j02716x8' name='procurement_of_goods_and_services_over_5000_april_to_june_2018.csv' table='[procurement_of_goods_and_#csv$]' type='table'>
+                <columns character-set='windows-1252' gridOrigin='A1:F408:no:A1:F408:1' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Reference Number' ordinal='0' />
+                  <column datatype='string' name='Supplier Name' ordinal='1' />
+                  <column datatype='real' name='Value' ordinal='2' />
+                  <column datatype='date' name='Purchase Order Date' ordinal='3' />
+                  <column datatype='string' name='Description of Goods or Services' ordinal='4' />
+                  <column datatype='string' name='Local Authority Department' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='procurement_of_goods_and_services_over_5000_april_to_june_2018' name='federated.12680oi1cmt2re12k6zia099gsjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12680oi1cmt2re12k6zia099gsjo'>
+            <column datatype='string' name='[Local Authority Department]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Purchase Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Value]' derivation='Sum' name='[diff:sum:Value:ok:3]' pivot='key' type='ordinal'>
+              <table-calc diff-options='Relative' ordering-field='' ordering-type='Field' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Local Authority Department]' derivation='None' name='[none:Local Authority Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Purchase Order Date]' derivation='Day-Trunc' name='[tdy:Purchase Order Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.12680oi1cmt2re12k6zia099gsjo].[tdy:Purchase Order Date:ok]' value='*dd/mm/yy' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.12680oi1cmt2re12k6zia099gsjo].[sum:Value:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.12680oi1cmt2re12k6zia099gsjo].[sum:Value:qk]' max='2000000.0' num-steps='15' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <text column='[federated.12680oi1cmt2re12k6zia099gsjo].[diff:sum:Value:ok:3]' />
+              <color column='[federated.12680oi1cmt2re12k6zia099gsjo].[sum:Value:qk]' />
+              <lod column='[federated.12680oi1cmt2re12k6zia099gsjo].[none:Local Authority Department:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#666666' underline='true'>Contract:</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Local Authority Department:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.12680oi1cmt2re12k6zia099gsjo].[none:Local Authority Department:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Day of Purchase Order Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.12680oi1cmt2re12k6zia099gsjo].[tdy:Purchase Order Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Value:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.12680oi1cmt2re12k6zia099gsjo].[diff:sum:Value:ok:3]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Value:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.12680oi1cmt2re12k6zia099gsjo].[sum:Value:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.12680oi1cmt2re12k6zia099gsjo].[tdy:Purchase Order Date:ok]</cols>
+        <table-calculations>
+          <partitionable-measures>
+            <column>[federated.12680oi1cmt2re12k6zia099gsjo].[sum:Value:ok]</column>
+          </partitionable-measures>
+        </table-calculations>
+      </table>
+      <simple-id uuid='{F2169E67-AE84-4720-AC66-54B7CFF5CE38}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12680oi1cmt2re12k6zia099gsjo].[sum:Value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.12680oi1cmt2re12k6zia099gsjo].[none:Local Authority Department:nk]</field>
+            <field>[federated.12680oi1cmt2re12k6zia099gsjo].[sum:Value:qk]</field>
+            <field>[federated.12680oi1cmt2re12k6zia099gsjo].[yr:Purchase Order Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{969E2DFA-B26B-4EF8-AC12-F4166A30FF7E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
